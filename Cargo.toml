@@ -1,0 +1,19 @@
+[package]
+name = "enki_llama"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+enki-gpu = "0.3"
+#enki-gpu = { path = "../enki"}
+glam = "0.29"
+crossterm = "0.28"
+memmap2 = "0.9"
+bytemuck = "1.18"
+anyhow = "1.0"
+safetensors = "0.4"
+hf-hub = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokenizers = { version = "0.20", default-features = false, features = ["onig"] }
+rayon = "1.12.0"
