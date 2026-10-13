@@ -6,6 +6,16 @@ A pure Rust Transformer inference engine (~2,000 LOC) running **Llama-3.2 1B** a
 
 ---
 
+## Live Demo: Brain Migration (GPU to CPU)
+
+<p align="center">
+  <img src="assets/demo.gif" alt="Enki LLM Live Brain Migration Demo" width="100%">
+</p>
+
+> The session begins generating Python code on the **GPU** (white text), switches live via `/dual` mode (320ms migration), and continues streaming the explanation by alternating tokens between the **GPU** (white) and **Host CPU cores** (bold red) while `btop` tracks the CPU spikes.
+
+---
+
 ## What It Does
 
 - **High-Performance Pure-Rust Inference:** Runs unquantized F16 weights with FP32 accumulators at ~40 tokens/sec on Nvidia Tesla T4.
